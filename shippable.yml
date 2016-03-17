@@ -1,6 +1,6 @@
 language: go
 
-build_image: shippableimages/ubuntu1404_go:latest
+build_image: drydock/u14gol:prod
 
 go:
   - 1.2
