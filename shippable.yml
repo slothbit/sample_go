@@ -1,6 +1,6 @@
 language: go
 
-build_image: drydock/u14gol:prod
+build_image: shippable/minv2:latest
 
 go:
   - 1.2
