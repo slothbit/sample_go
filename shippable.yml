@@ -6,7 +6,7 @@ go:
   - 1.6
 
 before_install:
-  - echo "$SHIPPABLE_GO_VERSION
+  - echo "$SHIPPABLE_GO_VERSION"
   - echo "$GOPATH"
   - echo "$HOME"
   - export GOPATH=$SHIPPABLE_GOPATH
