@@ -5,6 +5,10 @@ build_image: shippable/minv2:latest
 go:
   - 1.6
 
+env:
+  global:
+    - secure: K+tk80XUt+pdVv35fa45jpoExoOQxPeuH/dT6q4h4Q2TBKFFtiw8SneSzauDLLBDNKfGbLAoA6H9zQyNgshTU6AUTh2Si1EaVJeYwxPUxGnyAT6P1TBOZ2R4sbwe298WLCyVhHfj8MPirFZ02ThmuK0LNevjxhvlsmxA6dI5Mklgn9yahSK4ATKTb0SHFtSKeCPEMTXEWKHl8mLV52HH3BN3G4lY8w5IwHatxtXdTEvAIPJ+13t7jJ6cQiRi3ObE4JqZXLp+yPpi/e+yYCKIt0fxJAIjwyVfzV2QCQcspMB/NchZtXQbJXh+pM/p2shtrzdbVsSxzMGM3lm8vr7CRw==
+
 before_install:
   - echo "$SHIPPABLE_GO_VERSION"
   - echo "$GOPATH"
@@ -26,4 +30,4 @@ script:
   - go test -coverprofile=coverage.txt -covermode=atomic
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t $TOKEN
