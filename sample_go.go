@@ -1,6 +1,6 @@
 package sample
 
-import "github.com/Shippable/sample_go/newmath"
+import "github.com/slothbit/sample_go/newmath"
 
 var result float64
 
