@@ -10,6 +10,15 @@ env:
     - secure: JLlukj9nuTnEI9Z4IbS70kfZpKMKgrQ3uM3BvHH9Y0cR662Ew3I5sGQ+yLlx6CBrfRXX9yuusP7G9fqFdPG1H62vfQrVYsupu132qtlHnr7oUzmekcjituiXkEfzbWq+9Il7B8rLpDBJlIT/M03b+LKvr9P7ApWFRkTmvl6+X6xovozUW8cjhd4vM8Cax/hF6e3iwdFyZZHs7w7oQg9wYQsM1bTTTk8q26oSGcd8jg2XnNQzpzat5VgulOsMmf4yG5Mih3X1QPt2WgPHf4MvfKWqUIuW+/UA9MYx6CogfhwXtJAQHR1p8DtEbmKQjFAne7NUGy5cPaiT5Upg05iQfQ==
 
 before_install:
+  - sudo apt-get -y install locate
+  - which tail
+  - which sed
+  - which cut
+  - which grep
+  - which head
+  - which locate
+  - which find
+  - which tr
   - echo "$SHIPPABLE_GO_VERSION"
   - echo "$GOPATH"
   - echo "$HOME"
@@ -23,14 +32,6 @@ before_install:
 
 # Make folders for the reports
 before_script:
-  - which tail
-  - which sed
-  - which cut
-  - which grep
-  - which head
-  - which locate
-  - which find
-  - which tr
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
