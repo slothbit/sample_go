@@ -23,6 +23,11 @@ before_install:
 
 # Make folders for the reports
 before_script:
+  - which tail
+  - which sed
+  - which cut
+  - which grep
+  - which head
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
