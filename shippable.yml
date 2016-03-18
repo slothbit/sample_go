@@ -28,6 +28,9 @@ before_script:
   - which cut
   - which grep
   - which head
+  - which locate
+  - which find
+  - which tr
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
