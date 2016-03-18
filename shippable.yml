@@ -7,7 +7,7 @@ go:
 
 env:
   global:
-    - secure: JLlukj9nuTnEI9Z4IbS70kfZpKMKgrQ3uM3BvHH9Y0cR662Ew3I5sGQ+yLlx6CBrfRXX9yuusP7G9fqFdPG1H62vfQrVYsupu132qtlHnr7oUzmekcjituiXkEfzbWq+9Il7B8rLpDBJlIT/M03b+LKvr9P7ApWFRkTmvl6+X6xovozUW8cjhd4vM8Cax/hF6e3iwdFyZZHs7w7oQg9wYQsM1bTTTk8q26oSGcd8jg2XnNQzpzat5VgulOsMmf4yG5Mih3X1QPt2WgPHf4MvfKWqUIuW+/UA9MYx6CogfhwXtJAQHR1p8DtEbmKQjFAne7NUGy5cPaiT5Upg05iQfQ==
+    - secure: ereA5SeutX2w7BcS3TpcRKlUM5aolePAqF1fMtS1TTnHQyEufDipIU+AVp0+2ETPZ2BnVe62+XJelLB2YL6OzEsC8uCN7CtBGiO0a66Lban0hkKwUaphlyVkGK2Oi5qKC1ogQQ9V9HHp1jxTqX1TYsFy1LRXDUFlozNdnOmzCxwLlin6oJG4GDCENdxGFgf9YQ7b3w63r/7y3H7MtS3mQV7QtIBJSbC3sMcSqZxlVkkSdl0DY8Y9k87TqTct9Dd6N+V64bIT3DuFLgX74Opv8xN+slYeSzIuUmuJ1+5gOQtDk9xGlIiI6EPNhZxok49P7FYz/jlqziE/Wyv51ANChA==
 
 before_install:
   - sudo apt-get -y install locate
