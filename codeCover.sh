@@ -750,11 +750,16 @@ else
     if [ "$status" = "" ];
     then
       say "    Uploading to S3"
+      say "upload is:   $upload"
+      say "status is:  $status"
+      say "res is: $res"
       s3=$(echo "$upload" | \
            curl -isX PUT --data-binary @- \
                 -H 'Content-Type: plain/text' -H 'x-amz-acl: public-read' \
                 "$(echo "$res" | sed -n 2p)")
+      say "made it past s3 statement"
       status=$(echo "$s3" | grep 'HTTP/1.1 ' | tail -1 | cut -d' ' -f2)
+      say "made it past status statement"
       if [ "${status:0:1}" = "2" ];
       then
         say ""
